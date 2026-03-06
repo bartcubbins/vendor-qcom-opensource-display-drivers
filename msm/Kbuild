@@ -85,7 +85,9 @@ LINUX_INC +=	-I$(DISPLAY_ROOT) \
 	-I$(DISPLAY_ROOT)/msm/hdmi \
 	-I$(DISPLAY_ROOT)/msm/dsi \
 	-I$(DISPLAY_ROOT)/msm/sde \
-	-I$(DISPLAY_ROOT)/../mm-drivers/hw_fence/include \
+	-I$(DISPLAY_ROOT)/../mm/hw_fence/include \
+	-I$(DISPLAY_ROOT)/../mm/msm_ext_display/include \
+	-I$(DISPLAY_ROOT)/../mm/sync_fence/include \
 	-I$(DISPLAY_ROOT)/include/uapi/display \
 
 CDEFINES +=	-DANI_LITTLE_BYTE_ENDIAN \
