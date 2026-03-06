@@ -2,6 +2,10 @@
 
 KDIR := $(TOP)/kernel_platform/msm-kernel
 
+ifeq ($(DISPLAY_ROOT),)
+DISPLAY_ROOT := $(srctree)/techpack/display
+endif
+
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 ifeq ($(CONFIG_ARCH_QTI_VM), y)
 	include $(DISPLAY_ROOT)/config/gki_waipiodisptui.conf
